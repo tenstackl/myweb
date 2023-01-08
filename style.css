@@ -287,12 +287,11 @@ width: 600px;
 
 button
 {
-    border-radius: 30px;
-color: black;
+    
+color: rgb(0, 0, 0);
     background: 0;
-border: 1px solid #000000;
-
-
+border: 1px solid #000;
+border-radius: 30px;
 padding: 10px 20px;
 font-family:  "Poppins", sans-serif;
 margin-top: 5px;
@@ -300,6 +299,7 @@ cursor: pointer;
 transition: 0.5s;
 
 }
+
 button:hover
 {
     background: #000000;
@@ -508,8 +508,6 @@ font-weight: 600;
 .skils-con
 {
     width: 370px;
-
-    
 }
 .title-skil i
 {
@@ -519,7 +517,7 @@ font-weight: 600;
 .skils1-con
 {
     overflow: hidden;
-   height: 200px;
+  
     margin: 2rem 2rem;
     display: inline-block;
 }
