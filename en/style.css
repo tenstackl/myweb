@@ -223,7 +223,7 @@ left: 4%;
 .s-1-1 .title
 {
     font-weight: 600;
-    font-size: 3rem;
+    font-size: 2.9rem;
 }
 .s-1-1 .desc
 {
@@ -656,4 +656,11 @@ display: inline-block;
 .copy a
 {
     color: white;
+}
+
+.subtitle
+{
+    font-weight: 600;
+    font-size: 25px;
+    color: #474747;
 }
