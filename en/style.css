@@ -1,11 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+html, body
+{
+    overflow-x: hidden;
+}
 body
 {
     font-family: "Poppins", sans-serif;
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
+    background: #fff;
 }
+
 .menu
 {
 background: #fff;
@@ -182,9 +187,10 @@ padding-right: 1px;
         width: 40%;
         display: inline-block;
         position: relative;
-        top: -90px;
+        top: -50px;
         left: 7%;
     }
+   
     .s-3 .title
     {
      
@@ -217,7 +223,7 @@ left: 10%;
     width: 40%;
     display: inline-block;
     position: relative;
-    top: -200px;
+    top: -140px;
 left: 4%;
 }
 .s-1-1 .title
@@ -285,12 +291,11 @@ width: 600px;
 
 button
 {
-    border-radius: 30px;
-color: black;
+    
+color: rgb(0, 0, 0);
     background: 0;
-border: 1px solid #000000;
-
-
+border: 1px solid #000;
+border-radius: 30px;
 padding: 10px 20px;
 font-family:  "Poppins", sans-serif;
 margin-top: 5px;
@@ -298,6 +303,7 @@ cursor: pointer;
 transition: 0.5s;
 
 }
+
 button:hover
 {
     background: #000000;
@@ -311,7 +317,7 @@ button i
 @media screen and (max-width: 1100px){
     .s-3
     {
-       margin-top: 100px;
+       margin-top: 150px;
     }
     .s-3 img
     {
@@ -432,33 +438,35 @@ margin-bottom: 20px;
 }
 .card-title
 {
-  
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
     color: #000000;
 font-weight: 600;
-font-size: 2rem;
+font-size: 1.7rem;
+width: 60%;
+text-align: left;
 }
-.card a
+
+.s-4 a
 {
-    text-decoration: none;
+    text-decoration: none !important;
 }
 .card
 {
     margin: 2rem;
-border-radius: 20px;
 width: 40%;
    padding-bottom: 10px;
     
     background: #ffffff;
-    box-shadow:  8px 8px 16px #b5b5b5,
-                 -8px -8px 16px #ffffff;
+position: relative;
     display: inline-block;
 }
 .card-tło
 {
-    border-radius: 20px 20px 0 0;
     object-fit: cover;
     width: 100%;
-    height: 200px;
+    height: 350px;
 }
 @media screen and (max-width: 800px){
     .card
@@ -506,8 +514,6 @@ font-weight: 600;
 .skils-con
 {
     width: 370px;
-
-    
 }
 .title-skil i
 {
@@ -607,7 +613,7 @@ transition: 0.5s;
   @media screen and (max-height: 900px){
     .s-3
     {
-        margin-top: 0px;
+        margin-top: 125px;
     }
   }
 
@@ -663,4 +669,10 @@ display: inline-block;
     font-weight: 600;
     font-size: 25px;
     color: #474747;
+}
+@media screen and (max-width: 1000px){
+    .lang:hover + .lang-opt
+{
+display: inline-block;
+}
 }

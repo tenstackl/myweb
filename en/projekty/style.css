@@ -1,4 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+html, body
+{
+    overflow-x: hidden;
+}
 body
 {
     font-family: "Poppins", sans-serif;
@@ -432,33 +436,35 @@ margin-bottom: 20px;
 }
 .card-title
 {
-  
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
     color: #000000;
 font-weight: 600;
-font-size: 2rem;
+font-size: 1.7rem;
+width: 60%;
+text-align: left;
 }
-.card a
+
+.s-4 a
 {
-    text-decoration: none;
+    text-decoration: none !important;
 }
 .card
 {
     margin: 2rem;
-border-radius: 20px;
 width: 40%;
    padding-bottom: 10px;
     
     background: #ffffff;
-    box-shadow:  8px 8px 16px #b5b5b5,
-                 -8px -8px 16px #ffffff;
+position: relative;
     display: inline-block;
 }
 .card-tło
 {
-    border-radius: 20px 20px 0 0;
     object-fit: cover;
     width: 100%;
-    height: 200px;
+    height: 350px;
 }
 @media screen and (max-width: 800px){
     .card
@@ -655,4 +661,10 @@ display: inline-block;
 .copy a
 {
     color: white;
+}
+@media screen and (max-width: 1000px){
+    .lang:hover + .lang-opt
+{
+display: inline-block;
+}
 }
