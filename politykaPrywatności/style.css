@@ -670,6 +670,10 @@ display: inline-block;
         padding: 0 25px;
     }  
 }
+.politykaPrywatnosci li
+{
+    list-style: disc;
+}
 hr
 {
     margin-top: 1rem;
