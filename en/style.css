@@ -123,32 +123,34 @@ width: 100%;
     }
     
     
-   
+.socials-norma
+{
+    display: none !important;
+}
     .menu ul {
         position: absolute;
   justify-content: space-between;
 
         right: 0;
         top: 55px;
-        background: rgba(0, 0, 0, 0.594);
-        backdrop-filter: blur(8px);
-        height: 89vh;
+
         flex-direction: column;
         text-align: center;
-        transform: translate(100%);
         transition: .3s ease-in-out;
-        padding: 15px;
         z-index: 1;
+        height: 0;
+        background: rgba(0, 0, 0, 0.594);
+        backdrop-filter: blur(8px);
+        overflow: hidden;
     }
     li .active
     {
         border: 0 !important;
     }
-    
     .menu ul.active {
-        transform: translate(0%);
+        padding: 15px;
+        height: 89vh;
     }
-    
     .menu a {
         color: rgb(255, 255, 255);
         letter-spacing: 2px;
@@ -166,9 +168,9 @@ padding-right: 1px;
         }
     
     @media only screen and (max-width: 760px) {
-    .menu ul {
-        width: 100%;
-    }
+        .menu ul {
+            width: 100%;
+        }
     }
     
 
