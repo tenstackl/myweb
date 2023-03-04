@@ -664,6 +664,12 @@ display: inline-block;
 {
     padding: 0 50px;
 }
+@media screen and (max-width: 500px){
+    .politykaPrywatnosci
+    {
+        padding: 0 25px;
+    }  
+}
 hr
 {
     margin-top: 1rem;
